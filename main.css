@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 1px solid rgba(0,0,0,0.0);
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root {
+    --primary-color: #141313; /* black */
+    --secondary-color: #9f8636; /* golden */
+    --grey-color: #e4edf3; /* table grey */
+}
+
+body, html {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+body {
+    height: 100%;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+ul li {
+    list-style: none;
+}
+
+.btn-gold {
+    padding: 1rem 2rem;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-white {
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+
+h1 {
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.9rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Section */
+#section {
+padding: 2rem 0;
+}
+
+/* Utility */
+
+#hero-banner {
+    background-image: url("https://raw.githubusercontent.com/ancapopescu6/timex_redesign/master/hero-celestial1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+    max-height: 100vh;
+}
+/* Nav */
+.navbar {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 1rem auto;
+     margin-top: 2rem;
+    
+}
+
+.main-nav li a {
+    color: #fff;
+}
+
+/* Toggle btn */
+.navbar-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.main-nav {
+   display: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1.2rem;
+     width: 60%;
+}
+
+.active {
+    display: block;
+    position: absolute;
+   right: 2.8rem;
+}
+
+.fa-ellipsis-v {
+    color: #fff;
+}
+ /** /Nav */
+
+/* Media breakpoints----------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 0;
+        height: 80px;
+        margin-right: 0;
+        
+    }
+    
+    .main-nav {
+        display: flex;
+        margin-right: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        background-color: transparent;
+        position: absolute;
+        right: 1.5rem;
+    }
+    
+    .main-nav li {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .nav-links {
+        margin-left: 40px;
+        margin-top: 1rem;
+    }
+    
+    .navbar-toggle {
+        display: none;
+    }
+    
+    .fa-chevron-down {
+        color: var(--secondary-color);
+        position: absolute;
+        bottom: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 820px) {
+    button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #hero-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vw;
+    max-height: 100vh;
+ }
+    
+    h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    }
+    
+    .hero-txt {
+        text-align: left;
+    }
+    
+    .hero-txt p {
+        width: 67%;
+    }
+    
+    
+    #chevron-hero {
+        display: none;
+    }
+    
+  
+    /* .watches-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+        align-items: center;
+        
+}
+
+    .watches-slider img {
+        display: flex;
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 2rem;
+        margin: 0 auto;
+    } */
+}
+
+@media screen and (max-width: 510px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    #hero-banner {
+        height: 100vw;
+        max-height: 100vh; 
+        height: 90vh;
+        background-size: 1100px 700px;
+        background-position: 
+    }
+}
+
+/* media breakpoints ends*/
+
+.logo img {
+    display: inline-block;
+    max-width: 100px;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+}
+
+.hero-txt {
+    max-width: 500px;
+    margin-top: 20vh;
+}
+
+.hero-txt p,
+.hero-txt h2 {
+    color: #fff;
+}
+
+.specs-section h2 {
+    text-align: right;
+    position: relative;
+    padding-bottom: 1rem;
+}
+    
+   .specs-section h2:after {
+        content: "";
+        display: block;
+        margin: 0;
+        padding-top: 15px;
+        border-bottom: 3px solid grey;
+        width: 120px;
+       position: absolute;
+       right: 0;
+       bottom: 0;  
+    } 
+
+.specs-all {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+table {
+    border: transparent;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+td {
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+}
+
+tr:nth-child(2n) {
+    background-color: var(--grey-color);
+}
+
+#specs-left img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 930px) { 
+        
+    .specs-all {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* .watches-slider {
+        justify-content: space-evenly;
+    }
+    
+   #box-day img {
+        display: flex;
+        width: 100%;
+        max-width: 140px;
+        height: auto;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }*/
+} 
+/* media max-width 930px ends */
+
+#specs-img {
+    display: flex;
+}
+
+#specs-img img {
+    width: 100%;
+    height: auto;
+}
+
+#img-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#watches h2 {
+    text-align: left;
+     position: relative;
+    padding-bottom: 1rem;
+}
+
+#watches h2:after {
+    content: "";
+    display: block;
+    margin: 0;
+        padding-top: 15px;
+        border-bottom: 3px solid grey;
+        width: 145px;
+       position: absolute;
+       left: 0;
+       bottom: 0;  
+}
+
+/*
+.watches-slider {
+    position: relative;
+
+}
+
+#box-day {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    
+}
+
+#box-day img {
+    display: flex;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+     align-items: center;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    background: #37f;
+    color: white;
+    font-size: 2rem;
+     cursor: pointer;
+}
+
+.prev {
+    position: absolute; 
+    left: 0;
+    top: 40%;
+    margin-right: 3rem;
+}
+
+.next {
+   position: absolute; 
+    right: 0;
+    top: 40%;
+    margin-left: 3rem; 
+}
+*/
