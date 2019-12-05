@@ -38,12 +38,22 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: var(--primary-color);
+}
+
+a:hover,
+ {
+    text-decoration: none !important;
+    color: var(--secondary-color);
 }
 
 ul li {
     list-style: none;
+}
+
+li:hover {
+    font-weight: bold;
 }
 
 .btn-gold {
@@ -51,6 +61,18 @@ ul li {
     color: var(--secondary-color);
     background-color: transparent;
     border: 1px solid var(--secondary-color);
+}
+
+.btn-gold-shop {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+.btn-gold-shop a:hover {
+    text-decoration: none;
 }
 
 .btn-white {
@@ -221,26 +243,26 @@ padding: 2rem 0;
     }
     
   
-    /* .watches-slider {
+    #watches-slider {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-        align-items: center;
+    padding-top: 1rem;
+
+    align-items: center;
         
 }
 
-    .watches-slider img {
+    #watches-slider img {
         display: flex;
         width: 100%;
         max-width: 100px;
         height: auto;
         align-items: center;
         flex-wrap: wrap;
-        padding: 2rem;
+        padding: 1rem;
         margin: 0 auto;
-    } */
+    } 
 }
 
 @media screen and (max-width: 510px) {
@@ -300,6 +322,10 @@ padding: 2rem 0;
        bottom: 0;  
     } 
 
+#section hr {
+    padding: 0;
+    margin-top: -9px;
+}
 .specs-all {
     display: flex;
     flex-direction: row;
@@ -338,20 +364,21 @@ tr:nth-child(2n) {
         flex-direction: column;
     }
     
-    /* .watches-slider {
+    #watches-slider {
         justify-content: space-evenly;
     }
     
-   #box-day img {
+   #box-day img,
+     #box-night img {
         display: flex;
         width: 100%;
-        max-width: 140px;
         height: auto;
         align-items: center;
         flex-wrap: wrap;
         padding: 1rem;
+       padding-bottom: 2rem;
     }
-} */
+} 
 /* media max-width 930px ends */
 
 #specs-img {
@@ -386,28 +413,39 @@ tr:nth-child(2n) {
        bottom: 0;  
 }
 
-/*
-.watches-slider {
+
+#watches-slider {
     position: relative;
 
 }
 
-#box-day {
+#box-day,
+#box-night {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-top: 2rem;
+    padding-top: 0;
     padding-bottom: 2rem;
     flex-wrap: wrap;
     
 }
 
-#box-day img {
+#box-day img,
+#box-night img {
     display: flex;
     width: 100%;
-    max-width: 180px;
+    max-width: 140px;
     height: auto;
-     align-items: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+#box-night {
+    background: url('https://raw.githubusercontent.com/ancapopescu6/timex_redesign/master/bkg-watches.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 1.7rem;
+    
 }
 
 button {
@@ -432,4 +470,4 @@ button {
     top: 40%;
     margin-left: 3rem; 
 }
-*/
+
