@@ -555,7 +555,7 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%; 
-  background: url('https://raw.githubusercontent.com/ancapopescu6/timex_redesign/master/moon-bg.png');
+  background: var(--secondary-color);
     background-position: center;
     background-size: cover;
 }
